@@ -1,19 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:demoflutter/list_view.dart';
+import 'package:demoflutter/tab_bar.dart';
 
 class MyBody extends StatelessWidget {
   const MyBody({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const TabBarView(
-      children: [
-        Card(
-          child: Text("Home"),
-        ),
-        Card(
-          child: Text("Setting"),
-        ),
-      ],
-    );
+    return const MyListView();
   }
 }

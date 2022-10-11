@@ -8,16 +8,10 @@ class MyMenu extends StatelessWidget with PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      bottom: const TabBar(
-        tabs: [
-          Tab(icon: Icon(Icons.home)),
-          Tab(icon: Icon(Icons.settings)),
-        ],
-      ),
       title: const Text('Flutter คืออะไร ?'),
     );
   }
 
   @override
-  Size get preferredSize => const Size.fromHeight(100);
+  Size get preferredSize => const Size.fromHeight(50);
 }

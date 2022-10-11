@@ -10,20 +10,23 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // ignore: prefer_const_constructors
     var materialApp = MaterialApp(
       title: _title,
       theme: ThemeData(
         primarySwatch: Colors.blueGrey,
       ),
-      // ignore: prefer_const_constructors
       home: DefaultTabController(
           length: 2,
           child: Scaffold(
             appBar: MyMenu("hello"),
-            body: const MyBody(),
+            body: const MyBody(todos:[
+                Todo(name: 'A'),
+                Todo(name: 'B'),
+                Todo(name: 'C'),
+                Todo(name: 'D'),
+                Todo(name: 'E'),
+            ]),
           )),
-      // home: const Scaffold(body: Center(child: Text("hello"))),
     );
     return materialApp;
   }
